@@ -118,7 +118,7 @@ label= "RAISE"                                                 ;
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
    │    Ä    │         │    ß    │         │         │         │                    │         │         │         │         │    Ö    │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         │         ││        ││        ││         │         │         │         │         │         │
+   │ BT_CLR  │BT_SEL 0 │BT_SEL 1 │         │         │         ││        ││        ││         │         │         │         │         │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │ ADJUST  │         │         │         ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
@@ -126,7 +126,7 @@ label= "RAISE"                                                 ;
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
               &trans    &trans    &trans    &trans    &trans                         &trans    &trans    &kp RA(U) &trans    &trans     
     &kp RA(A) &trans    &kp RA(S) &trans    &trans    &trans                         &trans    &trans    &trans    &trans    &kp RA(O) &trans  
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans    &trans    &trans    &trans
+    &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1    &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans    &trans    &trans    &trans
                                   &mo ADJUST &trans   &trans    &trans     &trans    &trans    &trans    &trans  
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
